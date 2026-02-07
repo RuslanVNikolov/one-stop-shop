@@ -141,3 +141,4 @@ _site/
 profile_default/
 *.mo
 *.pot
+/docs/PROJECT_LOG.md
