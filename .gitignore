@@ -1,32 +1,143 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.vs/
+
+# Go
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-
-# Test binary, built with `go test -c`
 *.test
-
-# Code coverage profiles and other test artifacts
 *.out
-coverage.*
-*.coverprofile
-profile.cov
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
+/vendor/
+/bin/
+/pkg/
 go.work
 go.work.sum
+*.cover
+*.prof
 
-# env file
+# Node.js / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+lerna-debug.log*
+.next/
+out/
+build/
+dist/
+.cache/
+.turbo/
+.vercel
+.nuxt
+.output
+
+# Environment Variables
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env
 
-# Editor/IDE
-# .idea/
-# .vscode/
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+/data/
+pgdata/
+mongodata/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Logs
+logs/
+*.log
+log.txt
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.orig
+
+# Build Artifacts
+coverage/
+*.coverprofile
+__debug_bin
+.test_cache/
+
+# Dependencies
+/lib/
+/libs/
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+.Trash-*
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Secrets & Keys
+*.pem
+*.key
+*.cert
+*.crt
+id_rsa*
+*.p12
+*.jks
+secrets/
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.hypothesis/
+
+# Documentation Build
+site/
+_site/
+.docz/
+
+# Misc
+*.sage.py
+.ipynb_checkpoints
+profile_default/
+*.mo
+*.pot
