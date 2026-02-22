@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/RuslanVNikolov/one-stop-shop/backend/auth-service/model"
+	model2 "github.com/RuslanVNikolov/one-stop-shop/backend/auth-service/internal/model"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -51,9 +51,9 @@ func Migrate(db *gorm.DB) {
 	}
 
 	err := db.AutoMigrate(
-		&model.User{},
-		&model.RefreshToken{},
-		&model.OAuthAccount{},
+		&model2.User{},
+		&model2.RefreshToken{},
+		&model2.OAuthAccount{},
 	)
 
 	if err != nil {

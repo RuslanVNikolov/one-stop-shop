@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/RuslanVNikolov/one-stop-shop/backend/auth-service/config"
-	"github.com/RuslanVNikolov/one-stop-shop/backend/auth-service/database"
+	"github.com/RuslanVNikolov/one-stop-shop/backend/auth-service/internal/config"
+	"github.com/RuslanVNikolov/one-stop-shop/backend/auth-service/internal/database"
 	"github.com/gorilla/mux"
 	"gorm.io/gorm"
 )

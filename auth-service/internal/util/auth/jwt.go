@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/RuslanVNikolov/one-stop-shop/backend/auth-service/util/auth/model"
+	"github.com/RuslanVNikolov/one-stop-shop/backend/auth-service/internal/util/auth/model"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
 )
